@@ -1,0 +1,134 @@
+[
+  {
+    "file": "complete.pdf",
+    "scenario": "complete",
+    "fields": {
+      "institution_identifier": "DEMO-MERIDIAN-001",
+      "institution_name": "DEMO Meridian Institute of Technology",
+      "reference_number": "DEMO-COMPLETE-CERTIFICATE",
+      "faculty_count": "24",
+      "expiry_date": "2099-12-31"
+    }
+  },
+  {
+    "file": "missing_required_document.pdf",
+    "scenario": "missing_required_document",
+    "fields": {
+      "institution_identifier": "DEMO-MERIDIAN-001",
+      "institution_name": "DEMO Meridian Institute of Technology",
+      "reference_number": "DEMO-MISSING_REQUIRED_DOCUMENT-CERTIFICATE",
+      "faculty_count": "24",
+      "expiry_date": "2099-12-31"
+    }
+  },
+  {
+    "file": "expired_certificate.pdf",
+    "scenario": "expired_certificate",
+    "fields": {
+      "institution_identifier": "DEMO-MERIDIAN-001",
+      "institution_name": "DEMO Meridian Institute of Technology",
+      "reference_number": "DEMO-EXPIRED_CERTIFICATE-CERTIFICATE",
+      "faculty_count": "24",
+      "expiry_date": "2020-01-01"
+    }
+  },
+  {
+    "file": "identifier_mismatch.pdf",
+    "scenario": "identifier_mismatch",
+    "fields": {
+      "institution_identifier": "DEMO-WRONG-999",
+      "institution_name": "DEMO Meridian Institute of Technology",
+      "reference_number": "DEMO-IDENTIFIER_MISMATCH-CERTIFICATE",
+      "faculty_count": "24",
+      "expiry_date": "2099-12-31"
+    }
+  },
+  {
+    "file": "faculty_discrepancy.pdf",
+    "scenario": "faculty_discrepancy",
+    "fields": {
+      "institution_identifier": "DEMO-MERIDIAN-001",
+      "institution_name": "DEMO Meridian Institute of Technology",
+      "reference_number": "DEMO-FACULTY_DISCREPANCY-CERTIFICATE",
+      "faculty_count": "24",
+      "expiry_date": "2099-12-31"
+    }
+  },
+  {
+    "file": "duplicate_document.pdf",
+    "scenario": "duplicate_document",
+    "fields": {
+      "institution_identifier": "DEMO-MERIDIAN-001",
+      "institution_name": "DEMO Meridian Institute of Technology",
+      "reference_number": "DEMO-DUPLICATE_DOCUMENT-CERTIFICATE",
+      "faculty_count": "24",
+      "expiry_date": "2099-12-31"
+    }
+  },
+  {
+    "file": "metadata_anomaly.pdf",
+    "scenario": "metadata_anomaly",
+    "fields": {
+      "institution_identifier": "DEMO-MERIDIAN-001",
+      "institution_name": "DEMO Meridian Institute of Technology",
+      "reference_number": "DEMO-METADATA_ANOMALY-CERTIFICATE",
+      "faculty_count": "24",
+      "expiry_date": "2099-12-31"
+    }
+  },
+  {
+    "file": "simulated_success.pdf",
+    "scenario": "simulated_success",
+    "fields": {
+      "institution_identifier": "DEMO-MERIDIAN-001",
+      "institution_name": "DEMO Meridian Institute of Technology",
+      "reference_number": "DEMO-SIMULATED_SUCCESS-CERTIFICATE",
+      "faculty_count": "24",
+      "expiry_date": "2099-12-31"
+    }
+  },
+  {
+    "file": "simulated_mismatch.pdf",
+    "scenario": "simulated_mismatch",
+    "fields": {
+      "institution_identifier": "DEMO-MERIDIAN-001",
+      "institution_name": "DEMO Meridian Institute of Technology",
+      "reference_number": "DEMO-SIMULATED_MISMATCH-CERTIFICATE",
+      "faculty_count": "24",
+      "expiry_date": "2099-12-31"
+    }
+  },
+  {
+    "file": "source_unavailable.pdf",
+    "scenario": "source_unavailable",
+    "fields": {
+      "institution_identifier": "DEMO-MERIDIAN-001",
+      "institution_name": "DEMO Meridian Institute of Technology",
+      "reference_number": "DEMO-SOURCE_UNAVAILABLE-CERTIFICATE",
+      "faculty_count": "24",
+      "expiry_date": "2099-12-31"
+    }
+  },
+  {
+    "file": "verification_pending.pdf",
+    "scenario": "verification_pending",
+    "fields": {
+      "institution_identifier": "DEMO-MERIDIAN-001",
+      "institution_name": "DEMO Meridian Institute of Technology",
+      "reference_number": "DEMO-VERIFICATION_PENDING-CERTIFICATE",
+      "faculty_count": "24",
+      "expiry_date": "2099-12-31"
+    }
+  },
+  {
+    "file": "infrastructure_incomplete.pdf",
+    "scenario": "infrastructure_incomplete",
+    "fields": {
+      "institution_identifier": "DEMO-MERIDIAN-001",
+      "institution_name": "DEMO Meridian Institute of Technology",
+      "reference_number": "DEMO-INFRASTRUCTURE_INCOMPLETE-CERTIFICATE",
+      "faculty_count": "24",
+      "expiry_date": "2099-12-31"
+    }
+  }
+]
