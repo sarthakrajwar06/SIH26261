@@ -1,0 +1,17 @@
+project_id = "aicte-insight"
+[api]
+enabled = true
+schemas = ["public", "storage", "graphql_public"]
+max_rows = 1000
+[db]
+major_version = 15
+[db.seed]
+enabled = true
+sql_paths = ["./seed.sql"]
+[auth]
+enabled = true
+site_url = "http://localhost:5173"
+additional_redirect_urls = ["http://localhost:5173/reset-password"]
+[storage]
+enabled = true
+file_size_limit = "20MiB"

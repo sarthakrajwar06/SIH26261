@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.log
+.pids.json
+data/synthetic/*.pdf
+coverage/
+
+*.tsbuildinfo

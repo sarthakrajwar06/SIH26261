@@ -1,0 +1,8 @@
+import * as Dialog from '@radix-ui/react-dialog';
+import { ReactNode } from 'react';
+import { AlertCircle, X, FileSearch } from 'lucide-react';
+export function Badge({children}:{children:ReactNode}){const s=String(children);return <span className={'badge '+(/FAIL|HIGH|MISMATCH|ERROR/.test(s)?'red':/PASS|COMPLETE|READY|VERIFIED/.test(s)?'green':'amber')}>{s.replaceAll('_',' ')}</span>}
+export function ErrorBox({error}:{error:unknown}){return error?<div role="alert" className="error"><AlertCircle size={18}/>{error instanceof Error?error.message:String(error)}</div>:null}
+export function Empty({text='No records yet. Your work will appear here.'}:{text?:string}){return <div className="empty"><FileSearch size={32}/><h3>Nothing to display</h3><p>{text}</p></div>}
+export function Confirm({title,children,onConfirm}:{title:string,children:ReactNode,onConfirm:()=>void}){return <Dialog.Root><Dialog.Trigger asChild>{children}</Dialog.Trigger><Dialog.Portal><Dialog.Overlay className="overlay"/><Dialog.Content className="modal"><Dialog.Title>{title}</Dialog.Title><Dialog.Description>This action will be recorded in the application history. Please confirm before continuing.</Dialog.Description><div className="actions"><Dialog.Close className="secondary">Cancel</Dialog.Close><Dialog.Close className="primary" onClick={onConfirm}>Confirm action</Dialog.Close></div><Dialog.Close className="modal-close" aria-label="Close"><X size={18}/></Dialog.Close></Dialog.Content></Dialog.Portal></Dialog.Root>}
+export function PageTitle({eyebrow,title,description,action}:{eyebrow:string,title:string,description:string,action?:ReactNode}){return <div className="page-title"><div><div className="eyebrow">{eyebrow}</div><h1>{title}</h1><p>{description}</p></div>{action}</div>}
